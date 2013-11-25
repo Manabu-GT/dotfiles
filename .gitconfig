@@ -1,0 +1,62 @@
+[user]
+  name = Manabu-GT
+  email = manabu1984+github@gmail.com
+[core]  
+  quotepath = false
+[diff]
+  color = auto
+  rename = copy
+[color] 
+  ui = auto
+[alias]
+  ad = add
+  co = checkout
+  cob = checkout -b
+  com = checkout master
+  track = checkout --track
+  cm = commit
+  cma = commit -a
+  cmi = commit --interactive
+  amend = commit --amend -a
+  st = status ./
+  stn = status --untracked-files=no ./
+  rmc = rm --cached
+  br = branch
+  brr = branch -a
+  me = merge
+  ms = merge --squash
+  re = reset --hard
+  rb = rebase
+  rbm = rebase master
+  pl = pull
+  plm = pull origin master
+  plh = pull origin HEAD
+  plu = pull upstream master
+  ps = push
+  psm = push origin master
+  psh = push origin HEAD
+  psu = push upstream master
+  df = diff --ignore-space-change
+  dfs = diff --staged --ignore-space-change
+  dfl = diff --name-status
+  l = log
+  ll = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  lg = log --graph
+  ls = log --stat
+  lp = log -p --stat
+  lo = log --oneline --decorate
+  type = cat-file -t
+  dump = cat-file -p
+  rv = remote -v
+  ru = remote update
+  cancel = !git add . && git commit -a -m 'Temporary commit for cancel' && git reset --hard HEAD~
+[pager]
+  color = true
+[status]
+  color = auto
+[http]
+  sslVerify = false
+[push]
+  default = current
+[include]
+  path = ~/.gitconfig.local
