@@ -6,3 +6,7 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   GIT_PS1_SHOWUNTRACEKFILES=1
   GIT_PS1_SHOWUPSTREAM=auto
 fi
+if [ -f ~/.nvm/nvm.sh ]; then
+  source ~/.nvm/nvm.sh
+  nvm use v0.10.20
+fi
