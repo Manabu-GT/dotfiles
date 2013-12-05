@@ -8,5 +8,5 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 fi
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
-  nvm use v0.10.20
+  nvm use v0.10.21
 fi

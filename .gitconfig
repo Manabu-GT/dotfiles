@@ -23,6 +23,7 @@
   rmc = rm --cached
   br = branch
   brr = branch -a
+  brd = branch -d
   me = merge
   ms = merge --squash
   re = reset --hard
