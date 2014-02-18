@@ -6,6 +6,10 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   GIT_PS1_SHOWUNTRACEKFILES=1
   GIT_PS1_SHOWUPSTREAM=auto
 fi
+
+# For Android
+export PATH=$PATH:~/bin:/Applications/Android\ Studio.app/sdk/platform-tools:/Applications/Android\ Studio.app/sdk/tools
+
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
   nvm use v0.10.21
