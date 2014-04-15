@@ -4,11 +4,13 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
   GIT_PS1_SHOWDIRTYSTATE=1
   GIT_PS1_SHOWUNTRACEKFILES=1
+  GIT_PS1_SHOWSTASHSTATE=1
   GIT_PS1_SHOWUPSTREAM=auto
 fi
 
 # For Android
-export PATH=$PATH:~/bin:/Applications/Android\ Studio.app/sdk/platform-tools:/Applications/Android\ Studio.app/sdk/tools
+export ANDROID_HOME=/Applications/Android\ Studio.app/sdk
+export PATH=$PATH:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
