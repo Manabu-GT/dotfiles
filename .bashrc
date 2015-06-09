@@ -9,8 +9,27 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 fi
 
 # For Android
-export ANDROID_HOME=/Applications/Android\ Studio.app/sdk
-export PATH=$PATH:~/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+export ANDROID_HOME=/Users/mshimobe/Documents/android-sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+
+# Install adb-peco on /usr/local/bin
+alias adb='adbp'
+alias pidcat='pidcatp'
+
+# Convenient Aliases
+alias adb-restart='adb kill-server; adb start-server'
+alias screenshot='screenshot2 $TMPDIR/screenshot.png; open $TMPDIR/screenshot.png'
+alias installapp='find ./ -name *.apk | peco | xargs adb install -r'
+alias uninstallapp='adbp shell pm list package | sed -e s/package:// | peco | xargs adbp uninstall'
+
+# Gradle tab completion
+source ~/gradle-tab-completion.bash
+
+# Android completion
+source ~/android_completion
+
+# GenyMotion Peco
+source ~/genymotion_peco.sh
 
 if [ -f ~/.nvm/nvm.sh ]; then
   source ~/.nvm/nvm.sh
