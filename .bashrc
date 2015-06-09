@@ -21,6 +21,8 @@ alias adb-restart='adb kill-server; adb start-server'
 alias screenshot='screenshot2 $TMPDIR/screenshot.png; open $TMPDIR/screenshot.png'
 alias installapp='find ./ -name *.apk | peco | xargs adb install -r'
 alias uninstallapp='adbp shell pm list package | sed -e s/package:// | peco | xargs adbp uninstall'
+alias bugreport='adb bugreport'
+alias dumptop='adb shell dumpsys activity top'
 
 # Gradle tab completion
 source ~/gradle-tab-completion.bash
