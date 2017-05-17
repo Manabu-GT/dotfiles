@@ -1,0 +1,17 @@
+# Docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/manabu/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+# NVM
+#if [ -f ~/.nvm/nvm.sh ]; then
+#  source ~/.nvm/nvm.sh
+#  nvm use v0.10.21
+#fi
+
+# Nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
