@@ -40,7 +40,6 @@
   df = diff --ignore-space-change
   dfs = diff --staged --ignore-space-change
   dfl = diff --name-status
-  dfm = diff origin/master --ignore-space-change
   l = log
   ll = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   lg = log --graph
@@ -62,3 +61,5 @@
   default = current
 [include]
   path = ~/.gitconfig.local
+[credential]
+	helper = osxkeychain
