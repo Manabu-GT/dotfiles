@@ -3,6 +3,7 @@
   email = manabu1984+github@gmail.com
 [core]  
   quotepath = false
+  editor = /usr/bin/vim
 [diff]
   color = auto
   rename = copy
@@ -61,5 +62,3 @@
   default = current
 [include]
   path = ~/.gitconfig.local
-[credential]
-	helper = osxkeychain
