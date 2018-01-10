@@ -1,3 +1,10 @@
+# JAVA
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Hadoop
+export HADOOP_HOME=/usr/local/Cellar/hadoop/2.8.2/libexec/
+export HADOOP_VERSION=2.8.2
+
 # Docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/manabu/.boot2docker/certs/boot2docker-vm
